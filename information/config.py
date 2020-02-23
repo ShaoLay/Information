@@ -8,7 +8,7 @@ class Config(object):
     SECRET_KEY = "EjpNVSNQTyGi1VvWECj9TvC/+kq3oujee2kTfQUs8yCM6xX9Yjq52v54g+HVoknA"
 
     # 数据库的配置信息
-    SQLALCHEMY_DATABASE_URI = "mysql://root:mysql@127.0.0.1:3306/information"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:970202@127.0.0.1:3306/information"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # redis配置

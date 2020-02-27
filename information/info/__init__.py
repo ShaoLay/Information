@@ -8,6 +8,9 @@ from flask import Flask
 from flask_wtf.csrf import CSRFProtect
 from flask_session import Session
 
+import mysql.connector
+
+
 from config import Config, config
 
 db = SQLAlchemy()

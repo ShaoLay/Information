@@ -32,7 +32,7 @@ class User(BaseModel, db.Model):
 
     id = db.Column(db.Integer, primary_key=True)  # 用户编号
     nick_name = db.Column(db.String(32), unique=True, nullable=False)  # 用户昵称
-    password_hash = db.Column(db.String(128), nullable=False)  # 加密的密码
+    password_hash = db.Column(db.String(128))  # 加密的密码
     mobile = db.Column(db.String(11), unique=True, nullable=False)  # 手机号
     avatar_url = db.Column(db.String(256))  # 用户头像路径
     last_login = db.Column(db.DateTime, default=datetime.now)  # 最后一次登录时间

@@ -129,6 +129,9 @@ $(function(){
         method: "post",
         data: JSON.stringify(params),
         contentType: "application/json",
+        headers: {
+                "X-CSRFToken": getCookie('csrf_token')
+        },
         success: function (resp) {
             if (resp.errno == "0") {
                 // 刷新当前界面
@@ -184,9 +187,9 @@ $(".register_form_con").submit(function (e) {
             type: "post",
             contentType: "application/json",
             data: JSON.stringify(params),
-            // headers: {
-            //     "X-CSRFToken": getCookie('csrf_token')
-            // },
+            headers: {
+                "X-CSRFToken": getCookie('csrf_token')
+            },
             success: function (resp) {
                 if (resp.errno == "0") {
                     // 代表注册成功就代表登录成功
@@ -255,6 +258,9 @@ function sendSMSCode() {
         contentType: "application/json",
         // 响应数据的格式
         dataType: "json",
+        headers: {
+                "X-CSRFToken": getCookie('csrf_token')
+        },
         success: function (resp) {
             if (resp.errno == "0") {
                 // 倒计时60秒，60秒后允许用户再次点击发送短信验证码的按钮

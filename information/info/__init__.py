@@ -7,11 +7,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from flask_wtf.csrf import CSRFProtect
 from flask_session import Session
-
-import mysql.connector
-
+from flask_wtf.csrf import generate_csrf
 
 from config import Config, config
+
 
 db = SQLAlchemy()
 redis_store = None
@@ -24,8 +23,15 @@ def create_app(config_name):
     db.init_app(app)
     global redis_store
     redis_store = redis.StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT)
-    # CSRFProtect(app)
+    CSRFProtect(app)
     Session(app)
+
+    @app.after_request
+    def after_Request(response):
+        # 生成随机的csrf_token值
+        csfr_token = generate_csrf()
+        response.set_cookie("csrf_token", csfr_token)
+        return response
 
     # 注册蓝图
     from info.modules.index import index_blu

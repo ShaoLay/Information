@@ -53,23 +53,27 @@ function updateNewsData() {
         'per_page': 50
     }
     $.get("/newslist", params, function (resp) {
-        if (resp) {
-            // 先清空原有数据
+        data_querying = false
+    if (resp) {
+        // 显示数据
+        total_page = resp.totalPage
+        if (cur_page == 1) {
             $(".list_con").html('')
-            // 显示数据
-            for (var i=0;i<resp.newsList.length;i++) {
-                var news = resp.newsList[i]
-                var content = '<li>'
-                content += '<a href="#" class="news_pic fl"><img src="' + news.index_image_url + '?imageView2/1/w/170/h/170"></a>'
-                content += '<a href="#" class="news_title fl">' + news.title + '</a>'
-                content += '<a href="#" class="news_detail fl">' + news.digest + '</a>'
-                content += '<div class="author_info fl">'
-                content += '<div class="source fl">来源：' + news.source + '</div>'
-                content += '<div class="time fl">' + news.create_time + '</div>'
-                content += '</div>'
-                content += '</li>'
-                $(".list_con").append(content)
-            }
         }
+        cur_page += 1
+        for (var i=0;i<resp.newsList.length;i++) {
+            var news = resp.newsList[i]
+            var content = '<li>'
+            content += '<a href="/news/'+ news.id +'" class="news_pic fl"><img src="' + news.index_image_url + '?imageView2/1/w/170/h/170"></a>'
+            content += '<a href="/news/'+ news.id +'" class="news_title fl">' + news.title + '</a>'
+            content += '<a href="/news/'+ news.id +'" class="news_detail fl">' + news.digest + '</a>'
+            content += '<div class="author_info fl">'
+            content += '<div class="source fl">来源：' + news.source + '</div>'
+            content += '<div class="time fl">' + news.create_time + '</div>'
+            content += '</div>'
+            content += '</li>'
+            $(".list_con").append(content)
+        }
+    }
     })
 }

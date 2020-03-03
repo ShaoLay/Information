@@ -1,4 +1,5 @@
 {% extends 'news/base.html' %}
+
 {% block titleBlock %}首页-新经咨询网{% endblock %}
 {% block  scriptBlock%}
     <script type="text/javascript" src="../../static/news/js/index.js"></script>
@@ -7,12 +8,11 @@
 {% block headerBlock %}
     <ul class="menu fl">
                 {% for category in data.categories %}
-{#                    <li class="{% if loop.index0 == 0 %}active{% endif %}" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>#}
                     {% if loop.index == 1 %}
-                <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
-            {% else %}
-                <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
-            {% endif %}
+                        <li class="active" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                    {% else %}
+                        <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                    {% endif %}
                 {% endfor %}
             </ul>
 {% endblock %}

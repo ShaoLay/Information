@@ -12,7 +12,7 @@
 <body>
     <div class="header_con">
         <div class="header">
-            <a href="#" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
+            <a href="/" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
             {% block headerBlock %}
 
             {% endblock %}
@@ -32,7 +32,7 @@
     </div>
 
     <div class="conter_con">
-        {% block contentBlock %}
+h        {% block contentBlock %}
 
         {% endblock %}
 
@@ -44,7 +44,7 @@
             <ul class="rank_list">
                 {% for news in data.click_news_list %}
                     <li><span class="{{ loop.index0 | index_class }}">{{ loop.index }}</span><a href="/news/{{ news.id }}">{{ news.title }}</a></li>
-            {% endfor %}
+                {% endfor %}
             </ul>
         </div>
         {% endblock %}

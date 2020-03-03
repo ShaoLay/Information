@@ -3685,3 +3685,876 @@ INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:14:58] "[37mGET /newslist?c
 INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:14:58] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
 INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:14:58] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
 INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:15:03] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:27:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:27:55] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:27:56] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:06] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:06] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:28:07] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:25] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:26] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:26] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:27] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:54] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:55] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:55] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:55] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:55] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:29:56] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:52] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:30:53] "[33mGET /news/detail/1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1891 Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/index/views.py", line 39, in index
+    return render_template('news/index.html', data=data)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/news/index.html", line 1, in top-level template code
+    {% extends 'news/base.html' %}
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/news/base.html", line 41, in template
+    {% block contentBlock %}
+jinja2.exceptions.TemplateAssertionError: block 'contentBlock' defined twice
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:04] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:26] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:36:27] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:06] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:07] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:12] "[33mGET /news/detail/150 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:18] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:22] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:23] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:28] "[37mGET /newslist?cid=1&page=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:30] "[37mGET /newslist?cid=1&page=3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 15:43:30] "[37mGET /newslist?cid=1&page=4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:46] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:09:49] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:10:27] "[33mGET /149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:26] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:33] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:16:52] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:17:06] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:47] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:56] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:23:57] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:01] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:11] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:26:12] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:35:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:35:41] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:35:43] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:23] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:27] "[37mGET /newslist?cid=1&page=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:41:30] "[33mGET /news/detail/28 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:46] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:46] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:43:47] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:45:56] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:46:01] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:46:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:46:06] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:00] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[37mGET /static/news/images/zan_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[37mGET /static/news/images/collect_icons.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:02] "[37mGET /static/news/images/reply_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:11] "[37mGET /news/134 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:11] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:11] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:11] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:14] "[37mGET /news/166 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:14] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:14] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:49:14] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:51] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:51] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:51] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:51] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:56] "[37mGET /news/134 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:56] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:56] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:50:56] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:06] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:09] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:09] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:09] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:09] "[33mGET /images/cat.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:52:09] "[33mGET /images/worm.jpg HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:43] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:56:47] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:15] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:15] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:15] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:17] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:17] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:45] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:57:47] "[37mGET /news/134 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[37mGET /news/134 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:00] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:11] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:19] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:30] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 16:58:34] "[37mGET /news/297 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:50] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:51] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:51] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:51] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+ERROR app.py:1891 Exception on /news/1086 [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/news/views.py", line 27, in news_detail
+    return render_template('news/detail.html', data=data)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/news/detail.html", line 124, in template
+    <li><span class="{{ loop.index | rank }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+jinja2.exceptions.TemplateAssertionError: no filter named 'rank'
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:52] "[35m[1mGET /news/1086 HTTP/1.1[0m" 500 -
+ERROR app.py:1891 Exception on /news/134 [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/news/views.py", line 27, in news_detail
+    return render_template('news/detail.html', data=data)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/news/detail.html", line 124, in template
+    <li><span class="{{ loop.index | rank }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+jinja2.exceptions.TemplateAssertionError: no filter named 'rank'
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:00:58] "[35m[1mGET /news/134 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:01:00] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:47] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:51] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+ERROR app.py:1891 Exception on /news/1086 [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/news/views.py", line 27, in news_detail
+    return render_template('news/detail.html', data=data)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/news/detail.html", line 124, in template
+    <li><span class="{{ loop.index | rank }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
+jinja2.exceptions.TemplateAssertionError: no filter named 'rank'
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:02:53] "[35m[1mGET /news/1086 HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:03:06] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[33mGET /news_list?cid=1&page=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:47] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:57] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:10:58] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:37] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[33mGET /news_list?cid=1&page=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:16:41] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:20] "[33mGET /news_list?cid=1&page=1 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:44] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:46] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:18:46] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:04] "[37mGET /newslist?cid=1&page=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:07] "[37mGET /newslist?cid=1&page=3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:07] "[37mGET /newslist?cid=1&page=4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:07] "[37mGET /newslist?cid=1&page=5 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:07] "[37mGET /newslist?cid=1&page=6 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:07] "[37mGET /newslist?cid=1&page=7 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:08] "[37mGET /newslist?cid=1&page=8 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:08] "[37mGET /newslist?cid=1&page=9 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:08] "[37mGET /newslist?cid=1&page=10 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:09] "[37mGET /newslist?cid=1&page=11 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:17] "[33mGET /news/detail/8 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:47] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:49] "[37mGET /newslist?cid=1&page=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:49] "[37mGET /newslist?cid=1&page=3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:49] "[37mGET /newslist?cid=1&page=4 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:54] "[37mGET /news/1086 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:54] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:19:57] "[33mGET /news/detail/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:47] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:48] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:48] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:52] "[33mGET /news/1086 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:57] "[37mGET /newslist?cid=1&page=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:46:59] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:03] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:11] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:11] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:11] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:11] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:58:22] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:59:06] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:59:06] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:59:29] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:59:34] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 17:59:38] "[37mGET /news/detail/21 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:00:01] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:00:04] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:00:39] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:07] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:08] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:09] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:09] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:09] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:03:13] "[33mGET /news/1086 HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:13:53] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:00] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:04] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:20] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:20] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:14:23] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:32] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:37] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:37] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:37] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:37] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:43] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:45] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:15:45] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:21:32] "[37mGET /news/detail/14 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /news/detail/14 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:22:59] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:00] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:01] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:02] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:02] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:03] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:55] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:56] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:57] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:23:57] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:14] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:16] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:55] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:24:59] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:02] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:06] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:08] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:08] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:22] "[37mPOST /passport/logout HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:22] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:22] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:22] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:28] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:34] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:37] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:25:44] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:11] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:14] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:15] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[37mGET /news/detail/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [03/Mar/2020 18:31:34] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -

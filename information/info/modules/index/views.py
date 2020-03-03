@@ -1,27 +1,21 @@
-from flask import render_template, current_app, session, request, jsonify
+from flask import render_template, current_app, session, request, jsonify, g
 
 from . import index_blu
 from ... import constants
 from ...models import User, News, Category
 from ...utils import response_code
+from ...utils.common import user_login_data
 from ...utils.response_code import RET
 
 
 @index_blu.route('/')
+@user_login_data
 def index():
     """
     主页
     :return:
     """
-    # 获取到当前登录用户的id
-    user_id = session.get("user_id")
-    # 通过id获取登录用户信息
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-        except Exception as e:
-            current_app.logger.error(e)
+
     news_list = None
     try:
         news_list = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
@@ -38,7 +32,7 @@ def index():
         categories_dicts.append(category.to_dict())
 
     data = {
-        "user_info":user.to_dict() if user else None,
+        "user_info":g.user.to_dict() if g.user else None,
         "click_news_list": click_news_list,
         "categories": categories_dicts,
     }

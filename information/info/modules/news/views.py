@@ -9,11 +9,14 @@ from ...utils.common import user_login_data
 @news_blu.route('/detail/<int:news_id>')
 @user_login_data
 def news_detail(news_id):
-    news_clicks = []
+    news_list = None
     try:
-        news_clicks = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
+        news_list = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
     except Exception as e:
         current_app.logger.error(e)
+    click_news_list = []
+    for news in news_list if news_list else []:
+        click_news_list.append(news.to_basic_dict())
     # 查询新闻详情
     try:
         news = News.query.get(news_id)
@@ -34,6 +37,6 @@ def news_detail(news_id):
     data = {
         "news": news.to_dict(),
         "user_info": g.user.to_dict() if g.user else None,
-        'news_clicks':news_clicks,
+        'click_news_list':click_news_list,
     }
     return render_template('news/detail.html', data=data)

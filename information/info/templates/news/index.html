@@ -22,3 +22,13 @@
 
     </ul>
 {% endblock %}
+{% block rankBlock %}
+<div class="rank_title">
+                <h3>点击排行</h3>
+            </div>
+            <ul class="rank_list">
+                {% for news in data.click_news_list %}
+                    <li><span class="{{ loop.index0 | index_class }}">{{ loop.index }}</span><a href="/news/{{ news.id }}">{{ news.title }}</a></li>
+                {% endfor %}
+            </ul>
+{% endblock %}

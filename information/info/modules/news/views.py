@@ -2,7 +2,7 @@ from flask import render_template, session, current_app, g, abort, request, json
 
 from . import news_blu
 from ... import constants, db
-from ...models import News
+from ...models import News, Comment
 from ...utils.common import user_login_data
 from ...utils.response_code import RET
 
@@ -87,3 +87,45 @@ def news_collect():
         return jsonify(errno=RET.DBERR, errmsg="保存失败！")
     return jsonify(errno=RET.OK, errmsg="操作成功！")
 
+@news_blu.route('/news_comment', methods=["POST"])
+@user_login_data
+def add_news_comment():
+    """
+    添加评论
+    :return:
+    """
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录！")
+    # 获取参数
+    data_dict = request.json
+    news_id = data_dict.get("news_id")
+    comment_str = data_dict.get("comment")
+    parent_id = data_dict.get("parent_id")
+
+    if not all([news_id, comment_str]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全！")
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询数据失败！")
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="新闻不存在！")
+
+    # 初始化模型, 保存数据
+    comment = Comment()
+    comment.user_id = user.id
+    comment.news_id = news_id
+    comment.content = comment_str
+    if parent_id:
+        comment.parent_id = parent_id
+
+    try:
+        db.session.add(comment)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(E)
+        return jsonify(errno=RET.DBERR, errmsg="保存评论数据失败！")
+
+    return jsonify(errno=RET.OK, errmsg="评论成功！", data=comment.to_dict())

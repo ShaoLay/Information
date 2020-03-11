@@ -40,11 +40,24 @@ def news_detail(news_id):
     if g.user:
         if news in g.user.collection_news:
             is_collected = True
+
+    # 获取当前新闻的评论
+    comments = []
+    try:
+        comments = Comment.query.filter(Comment.news_id == news_id).order_by(Comment.create_time.desc()).all()
+    except Exception as e:
+        current_app.logger.error(e)
+    comment_list = []
+    for item in comments:
+        comment_dict = item.to_dict()
+        comment_list.append(comment_dict)
+
     data = {
         "news": news.to_dict(),
         "user_info": g.user.to_dict() if g.user else None,
         'click_news_list':click_news_list,
         'is_collected': is_collected,
+        'comments': comment_list,
 
     }
     return render_template('news/detail.html', data=data)
@@ -125,7 +138,7 @@ def add_news_comment():
         db.session.add(comment)
         db.session.commit()
     except Exception as e:
-        current_app.logger.error(E)
+        current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="保存评论数据失败！")
 
     return jsonify(errno=RET.OK, errmsg="评论成功！", data=comment.to_dict())

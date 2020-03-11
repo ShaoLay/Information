@@ -82,7 +82,7 @@ def news_collect():
     try:
         db.session.commit()
     except Exception as e:
-        current_app.logger.error(E)
+        current_app.logger.error(e)
         db.session.rollback()
         return jsonify(errno=RET.DBERR, errmsg="保存失败！")
     return jsonify(errno=RET.OK, errmsg="操作成功！")

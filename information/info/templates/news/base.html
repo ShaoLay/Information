@@ -20,7 +20,10 @@
         {% if data.user_info %}
             <div class="user_login fr">
                 <img src="{% if data.user_info.avatar_url %}{{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
-                <a href="#">{{ data.user_info.nick_name }}</a>
+                <a href="{{ url_for('profile.get_user_info') }}" id="nick_name">{{ data.user_info.nick_name }}</a>
+{#                <a href="{{ url_for('profile.get_user_info') }}" id="nick_name">{{ data.user_info.nick_name }}</a>#}
+{#            <li class="active"><a href="{{ url_for("profile.base_info") }}" target="main_frame">基本资料</a></li>#}
+{#             <a href="/user/info">{{ data.user_info.nick_name }}</a>#}
                 <a href="javascript:;" onclick="logout()">退出</a>
             </div>
         {% else %}

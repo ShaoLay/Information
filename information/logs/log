@@ -9906,3 +9906,781 @@ INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 14:39:18] "[37mGET /user/info 
 INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 14:39:18] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 14:39:20] "[37mGET /user/collection HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 14:39:22] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:26] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:29] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:29] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:33] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 18:04:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:31] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:35] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:35] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:35] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:36] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:41] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:41:42] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:36] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[32mGET /user/info HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:52] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:54] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:42:59] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:05] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:06] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:13] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:13] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:13] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:16] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:45] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:55] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:43:59] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:44:03] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:45:29] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:40] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:40] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:40] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:40] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:40] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:41] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:41] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:41] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:45] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:47:45] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:01] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:48] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:48:53] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:49:01] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:49:20] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:51:49] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[32mGET /user/info HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:27] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:31] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:34] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:35] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:36] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:37] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:37] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:37] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:54:39] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:34] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:51] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:54] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:54] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:54] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:54] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:55:54] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 20:56:10] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:23] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:07:26] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:05] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:05] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:05] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:05] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:07] "[37mGET /newslist?cid=2&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:09] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:10] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:10] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:37] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:38] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:41] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:42] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:42] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:42] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:46] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:46] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:46] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:46] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:46] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:08:51] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:06] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:06] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:08] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:08] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:08] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:09] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:15] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:15] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:15] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:19] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:19] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:10:19] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:11:31] "[37mGET /static/news/html/user_news_list.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:11:32] "[37mGET /static/news/css/jquery.pagination.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:11:32] "[37mGET /static/news/js/jquery.pagination.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:11:35] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:12:09] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:18] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:19] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:25] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:17:40] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:49] "[32mGET /user/info HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:50] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:51] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:53] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:54] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:55] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:55] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:55] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:25:58] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:26:32] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:26:59] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:08] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:27:28] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[32mGET /user/info HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:24] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:27] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:29] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:31] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:31] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:31] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:34] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:33:57] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:34:24] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:36] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:38] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:38] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:58] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:58] "[37mGET /static/news/html/user_news_list.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:58] "[37mGET /static/news/css/jquery.pagination.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:58] "[37mGET /static/news/js/jquery.pagination.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:36:58] "[37mGET /static/news/images/tip_bg.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:40:04] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:40:44] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:40:44] "[37mGET /static/news/css/jquery.pagination.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:40:44] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/js/tinymce_setup.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/js/user_news_release.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:45] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:46] "[37mGET /static/news/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:46] "[37mGET /static/news/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:46] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:44:46] "[37mGET /static/news/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+ERROR app.py:1891 Exception on /user/news_release [POST]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/profile/views.py", line 241, in news_release
+    news.user_id = g.user.id
+AttributeError: 'NoneType' object has no attribute 'id'
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:45:12] "[35m[1mPOST /user/news_release HTTP/1.1[0m" 500 -
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+ERROR app.py:1891 Exception on /user/news_release [POST]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/profile/views.py", line 241, in news_release
+    news.user_id = g.user.id
+AttributeError: 'NoneType' object has no attribute 'id'
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:45:12] "[35m[1mPOST /user/news_release HTTP/1.1[0m" 500 -
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+ERROR app.py:1891 Exception on /user/news_release [POST]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/modules/profile/views.py", line 241, in news_release
+    news.user_id = g.user.id
+AttributeError: 'NoneType' object has no attribute 'id'
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:45:19] "[35m[1mPOST /user/news_release HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:02] "[32mGET /user/info HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:02] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:03] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:05] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /news/detail/1157 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /static/news/js/detail.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /static/news/images/user_pic.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /static/news/images/collect_icons.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:12] "[37mGET /static/news/images/focus_icons.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:28] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:29] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:30] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:30] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:31] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:31] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:31] "[37mGET /static/news/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:32] "[37mGET /static/news/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:32] "[37mGET /static/news/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:32] "[37mGET /static/news/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:49] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:49] "[37mGET /static/news/html/user_news_list.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:49] "[37mGET /static/news/css/jquery.pagination.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:46:49] "[37mGET /static/news/js/jquery.pagination.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:11] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:13] "[37mGET /news/detail/1158 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:16] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:16] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:20] "[37mGET /news/detail/1158 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:22] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:23] "[37mGET /news/detail/149 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:24] "[37mGET /static/news/images/zan_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:24] "[37mGET /static/news/images/reply_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:26] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:47:27] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:48:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:48:59] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:00] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:01] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:02] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:02] "[37mGET /static/news/js/user_base_info.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:04] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:04] "[37mGET /static/news/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:04] "[37mGET /static/news/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:04] "[37mGET /static/news/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:34] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:44] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:44] "[37mGET /static/news/js/jquery.pagination.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:44] "[37mGET /static/news/images/tip_bg.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:56] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:58] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:49:58] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:50:00] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:50:39] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [21/Mar/2020 21:50:44] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -

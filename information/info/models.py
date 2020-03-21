@@ -82,6 +82,17 @@ class User(BaseModel, db.Model):
         }
         return resp_dict
 
+    # @property
+    # def password(self):
+    #     raise AttributeError('can not read')
+    #
+    # @password.setter
+    # def password(self, value):
+    #     self.password_hash =
+
+    def check_password(self, password):
+        return self.password, password
+
 
 class News(BaseModel, db.Model):
     """新闻"""

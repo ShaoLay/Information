@@ -105,3 +105,32 @@ def pic_info():
     # 4. 返回上传的结果<avatar_url>
     return jsonify(errno=RET.OK, errmsg="OK!", data={"avatar_url":constants.QINIU_DOMIN_PREFIX + url})
 
+@profile_blu.route('/pass_info', methods=["GET", "POST"])
+@user_login_data
+def pass_info():
+    if request.method == "GET":
+        return render_template('news/user_pass_info.html')
+
+    # 1. 获取到传入参数
+    data_dict = request.json
+    old_password = data_dict.get("old_password")
+    new_password = data_dict.get("new_password")
+
+    if not all([old_password, new_password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数有误！")
+
+    # 2. 获取当前登录用户的信息
+    user = g.user
+
+    if not user.check_password(old_password):
+        return jsonify(errno=RET.PWDERR, errmsg="原密码错误！")
+
+    user.password = new_password
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存数据失误！")
+
+    return jsonify(errno=RET.OK, errmsg="保存成功！")

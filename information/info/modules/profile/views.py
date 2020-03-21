@@ -134,3 +134,39 @@ def pass_info():
         return jsonify(errno=RET.DBERR, errmsg="保存数据失误！")
 
     return jsonify(errno=RET.OK, errmsg="保存成功！")
+
+@profile_blu.route('/collection')
+@user_login_data
+def user_collcetion():
+
+    # 获取页数
+    p = request.args.get('p', 1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+
+    user = g.user
+    collections = []
+    current_page = 1
+    total_page = 1
+    try:
+        # 进行分页数据查询
+        paginate = user.collection_news.paginate(p, constants.USER_COLLECTION_MAX_NEWS, False)
+        # 获取分页数据
+        collections = paginate.items
+        # 获取当前页
+        current_page = paginate.page
+        # 获取总页数
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 收藏列表
+    collection_dict_li = []
+    for news in collections:
+        collection_dict_li.append(news.to_basic_dict())
+
+    data = {"total_page": total_page, "current_page": current_page, "collections": collection_dict_li}
+    return render_template('news/user_collection.html', data=data)

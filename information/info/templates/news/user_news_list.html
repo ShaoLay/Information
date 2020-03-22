@@ -17,7 +17,7 @@
             <li>
             {% if news.status == 0 %}
                 {# 审核通过 #}
-                <a href="/news/{{ news.id }}">{{ news.title }}</a><em class="pass">已通过</em><span>{{ news.create_time }}</span>
+                <a href="/news/detail/{{ news.id }}">{{ news.title }}</a><em class="pass">已通过</em><span>{{ news.create_time }}</span>
             {% elif news.status == 1 %}
                 {# 审核中 #}
                 <a href="javascript:;">{{ news.title }}</a><em class="review">审核中</em><span>{{ news.create_time }}</span>

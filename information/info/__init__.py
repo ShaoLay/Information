@@ -4,13 +4,13 @@ from logging.handlers import RotatingFileHandler
 import redis
 
 from flask_sqlalchemy import SQLAlchemy
-from flask import Flask
+from flask import Flask, render_template, g
 from flask_wtf.csrf import CSRFProtect
 from flask_session import Session
 from flask_wtf.csrf import generate_csrf
 
 from config import Config, config
-
+from info.utils.common import user_login_data
 
 db = SQLAlchemy()
 redis_store = None
@@ -32,6 +32,14 @@ def create_app(config_name):
         csfr_token = generate_csrf()
         response.set_cookie("csrf_token", csfr_token)
         return response
+
+    @app.errorhandler(404)
+    @user_login_data
+    def page_not_found(_):
+        user = g.user
+        data = {"user_info":user.to_dict() if user else None}
+        return render_template('news/404.html', data=data)
+
 
     # 注册蓝图
     from info.modules.index import index_blu

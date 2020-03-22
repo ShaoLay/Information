@@ -60,9 +60,11 @@ def index_news_list():
         current_app.logger.error(e)
         return jsonify(errno=response_code.RET.PARAMERR, errmsg='参数错误')
 
-    filters = [News.status == 0]
-    if cid != '0':
-        filters.append(News.category_id == cid)
+    # 测试用: 添加已审核通过的条件
+    # filters = [News.status == 0]
+    # if cid != '0':
+    #     filters.append(News.category_id == cid)
+
 
     # 3.根据参数查询用户想看的新闻列表数据
     if cid == 1:

@@ -201,12 +201,6 @@ def news_release():
         content = request.form.get("content")
         index_image = request.files.get("index_image")
         category_id = request.form.get("category_id")
-        print(title)
-        print(source)
-        print(digest)
-        print(content)
-        print(index_image)
-        print(category_id)
 
         # 1.1 判断数据是否有值
         if not all([title, source, digest, content, index_image, category_id]):

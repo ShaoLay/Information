@@ -11031,3 +11031,129 @@ INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:05:25] "[36mGET /static/new
 INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:05:25] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
 INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:05:25] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:05:28] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:31] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:32] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:33] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:34] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:34] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:09:54] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:09] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:22] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:24] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:24] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:25] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:27] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:27] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:31] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:31] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:35] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:37] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:49] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:10:49] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:11:38] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:11:54] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:11:54] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:05] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:07] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:12:18] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:07] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:09] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:10] "[37mGET /user/news_release HTTP/1.1[0m" 200 -
+DEBUG retry.py:229 Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG connectionpool.py:225 Starting new HTTP connection (1): up.qiniu.com:80
+DEBUG connectionpool.py:437 http://up.qiniu.com:80 "POST / HTTP/1.1" 200 76
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:23] "[37mPOST /user/news_release HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:13:23] "[37mGET /user/news_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[37mGET /user/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:37:57] "[37mGET /user/base_info HTTP/1.1[0m" 200 -
+ERROR app.py:1891 Exception on /user/inf [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1925, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1907, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "/home/lay/代码管理器/Information/information/info/utils/common.py", line 33, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lay/代码管理器/Information/information/info/__init__.py", line 39, in page_not_found
+    user = g.user
+NameError: name 'g' is not defined
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:38:00] "[35m[1mGET /user/inf HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:38:21] "[37mGET /user/inf HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[37mGET /user/inf HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[37mGET /static/news/images/not_found.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [22/Mar/2020 17:39:01] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -

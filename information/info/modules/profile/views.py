@@ -32,10 +32,6 @@ def get_user_info():
 def base_info():
     """
     用户基本信息
-    1. 获取用户登录信息
-    2. 获取到传入参数
-    3. 更新并保存数据
-    4. 返回结果
     :return:
     """
 
@@ -252,3 +248,40 @@ def news_release():
             return jsonify(errno=RET.DBERR, errmsg="保存数据失败！")
 
         return jsonify(errno=RET.OK, errmsg="发布成功，等待审核！")
+
+@profile_blu.route('/news_list')
+@user_login_data
+def news_list():
+    # 获取页数
+    p = request.args.get("p", 1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+
+    user = g.user
+    news_li = []
+    current_page = 1
+    total_page = 1
+    try:
+        paginate = News.query.filter(News.user_id == user.id).paginate(p, constants.USER_COLLECTION_MAX_NEWS, False)
+        # 获取当前页数据
+        news_li = paginate.items
+        # 获取当前页
+        current_page = paginate.page
+        # 获取总页数
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_li = []
+
+    for news_item in news_li:
+        news_dict_li.append(news_item.to_review_dict())
+    data = {
+        "news_list": news_dict_li,
+        "totla_page": total_page,
+        "current_page": current_page,
+    }
+    return render_template('news/user_news_list.html', data=data)

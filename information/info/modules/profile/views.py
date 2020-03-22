@@ -230,7 +230,7 @@ def news_release():
         news.category_id = category_id
         news.user_id = g.user.id
         # 1代表着审核状态
-        news.status = 1
+        news.status = 0
 
         # 4. 保存到数据库
         try:

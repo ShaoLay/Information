@@ -2,7 +2,7 @@ from flask import render_template, session, current_app, g, abort, request, json
 
 from . import news_blu
 from ... import constants, db
-from ...models import News, Comment, CommentLike
+from ...models import News, Comment, CommentLike, User
 from ...utils.common import user_login_data
 from ...utils.response_code import RET
 
@@ -37,9 +37,14 @@ def news_detail(news_id):
         db.session.rollback()
     # 判断是否收藏新闻, 默认值是false
     is_collected = False
+    # 当前登录用户是否关注当前新闻作者
+    is_followed = False
+
     if g.user:
         if news in g.user.collection_news:
             is_collected = True
+        if news.user.followers.filter(User.id == g.user.id).count() > 0:
+            is_followed = True
 
     # 获取当前新闻的评论
     comments = []
@@ -72,14 +77,13 @@ def news_detail(news_id):
             comment_dict['is_like'] = True
         comment_list.append(comment_dict)
 
-
     data = {
         "news": news.to_dict(),
         "user_info": g.user.to_dict() if g.user else None,
         'click_news_list':click_news_list,
         'is_collected': is_collected,
         'comments': comment_list,
-
+        'is_followed': is_followed,
     }
     return render_template('news/detail.html', data=data)
 

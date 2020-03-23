@@ -83,8 +83,6 @@ def index_news_list():
     total_page = paginate.pages
     # 读取当前是第几页，将来在主页新闻列表上拉刷新时使用的
     current_page = paginate.page
-    print('总页数:', total_page)
-    print('当前页:', current_page)
 
     # 将模型对象列表转成字典列表，让json在序列化时乐意认识
     # news_dict_list == [{"id":1,"mobile":"18511110000"},{"id":2,"mobile":"18511110001"},...]

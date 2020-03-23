@@ -48,7 +48,7 @@ def index_news_list():
     """
     # 1.接受参数（分类id,要看第几页，每页几条数据）
     cid = request.args.get('cid', '1')
-    page = request.args.get('p', '1')
+    page = request.args.get('page', '1')
     per_page = request.args.get('per_page', '10')
 
     # 2.校验参数 （判断以上参数是否为数字）
@@ -83,6 +83,8 @@ def index_news_list():
     total_page = paginate.pages
     # 读取当前是第几页，将来在主页新闻列表上拉刷新时使用的
     current_page = paginate.page
+    print('总页数:', total_page)
+    print('当前页:', current_page)
 
     # 将模型对象列表转成字典列表，让json在序列化时乐意认识
     # news_dict_list == [{"id":1,"mobile":"18511110000"},{"id":2,"mobile":"18511110001"},...]

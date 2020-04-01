@@ -1,8 +1,10 @@
-from flask import request, render_template, current_app, session, g, redirect, url_for
+from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify
 
 from info import user_login_data
 from info.models import User
 from info.modules.admin import admin_blu
+from info.modules.passport import passport_blu
+from info.utils.response_code import RET
 
 
 @admin_blu.route('/login', methods=["GET", "POST"])
@@ -47,3 +49,16 @@ def admin_login():
 def admin_index():
     user = g.user
     return render_template('admin/index.html', user=user.to_dict())
+
+@passport_blu.route("logout", methods=['POST'])
+def logout():
+    """
+    清除session中的对应登录之后保存的信息
+    :return:
+    """
+    session.pop('user_id', None)
+    session.pop('nick_name', None)
+    # session.pop('mobile', None)
+    session.pop('is_admin', None)
+
+    return jsonify(errno=RET.OK, errmsg="OK！")

@@ -1,5 +1,6 @@
-from flask import request, render_template, current_app, session
+from flask import request, render_template, current_app, session, g, redirect, url_for
 
+from info import user_login_data
 from info.models import User
 from info.modules.admin import admin_blu
 
@@ -7,6 +8,10 @@ from info.modules.admin import admin_blu
 @admin_blu.route('/login', methods=["GET", "POST"])
 def admin_login():
     if request.method == "GET":
+        user_id = session.get('user_id', None)
+        is_admin = session.get('is_admin', False)
+        if user_id and is_admin:
+            return redirect(url_for('admin.admin_index'))
         return render_template("admin/login.html")
 
     # 取到登录的参数
@@ -35,4 +40,10 @@ def admin_login():
     # session['mobile'] = mobile
     session['is_admin'] = True
 
-    return "登录成功, 需要跳转到主页！"
+    return redirect(url_for('admin.admin_index'))
+
+@admin_blu.route('/index')
+@user_login_data
+def admin_index():
+    user = g.user
+    return render_template('admin/index.html', user=user.to_dict())

@@ -5,9 +5,10 @@ import time
 from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify, abort
 
 from info import user_login_data, db, constants
-from info.models import User
+from info.models import User, News
 from info.modules.admin import admin_blu
 from info.modules.passport import passport_blu
+from info.utils import response_code
 from info.utils.response_code import RET
 # from manage import app
 
@@ -186,3 +187,120 @@ def user_list():
     }
 
     return render_template('admin/user_list.html',context=context)
+
+@admin_blu.route('/news_review')
+def news_review():
+    """后台新闻审核列表"""
+
+    # 1.接受参数
+    page = request.args.get('p', '1')
+    keyword = request.args.get('keyword')
+
+    # 2.校验参数
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = '1'
+
+    # 3.分页查询
+    news_list = []
+    total_page = 1
+    current_page = 1
+    try:
+        if keyword:
+            paginate = News.query.filter(News.title.contains(keyword),News.status!=0).order_by(News.create_time.desc()).paginate(page,constants.ADMIN_NEWS_PAGE_MAX_COUNT,False)
+        else:
+            paginate = News.query.filter(News.status != 0).order_by(News.create_time.desc()).paginate(page,
+                                                                                                      constants.ADMIN_NEWS_PAGE_MAX_COUNT,
+                                                                                                      False)
+
+        news_list = paginate.items
+        total_page = paginate.pages
+        current_page = paginate.page
+    except Exception as e:
+        current_app.logger.error(e)
+        abort(404)
+
+    # 4.构造渲染数据
+    news_dict_list = []
+    for news in news_list:
+        news_dict_list.append(news.to_review_dict())
+
+    context = {
+        'news_list': news_dict_list,
+        'total_page': total_page,
+        'current_page': current_page
+    }
+
+    # 5.响应结果
+    return render_template('admin/news_review.html',context=context)
+
+@admin_blu.route('/news_review_detail/<int:news_id>')
+def news_review_detail(news_id):
+    """待审核新闻详情"""
+
+    # 1.查询出要审核的新闻的详情
+    news = None
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        abort(404)
+
+    if not news:
+        abort(404)
+
+    # 2.构造渲染数据
+    context = {
+        'news':news.to_dict()
+    }
+
+    return render_template('admin/news_review_detail.html',context=context)
+
+@admin_blu.route('/news_review_action', methods=['POST'])
+def news_review_action():
+    """审核新闻实现"""
+
+    # 1.接受参数
+    news_id = request.json.get('news_id')
+    action = request.json.get('action')
+
+    # 2.校验参数
+    if not all([news_id, action]):
+        return jsonify(errno=response_code.RET.PARAMERR, errmsg='缺少参数')
+    if action not in ['accept', 'reject']:
+        return jsonify(errno=response_code.RET.PARAMERR, errmsg='参数错误')
+
+    # 3.查询待审核的新闻是否存在
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=response_code.RET.DBERR, errmsg='查询新闻数据失败')
+
+    if not news:
+        return jsonify(errno=response_code.RET.NODATA, errmsg='新闻不存在')
+
+    # 4.实现审核逻辑
+    if action == 'accept':
+        # 通过
+        news.status = 0
+    else:
+        # 拒绝通过
+        news.status = -1
+        # 补充拒绝原因
+        reason = request.json.get('reason')
+        if not reason:
+            return jsonify(errno=response_code.RET.PARAMERR, errmsg='缺少拒绝理由')
+        news.reason = reason
+
+    # 5.同步到数据库
+    try:
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        current_app.logger.error(e)
+        return jsonify(errno=response_code.RET.DBERR, errmsg='保存数据失败')
+
+    return jsonify(errno=response_code.RET.OK, errmsg='OK')

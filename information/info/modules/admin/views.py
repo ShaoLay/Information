@@ -2,9 +2,9 @@ import datetime
 import random
 import time
 
-from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify
+from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify, abort
 
-from info import user_login_data, db
+from info import user_login_data, db, constants
 from info.models import User
 from info.modules.admin import admin_blu
 from info.modules.passport import passport_blu
@@ -146,3 +146,43 @@ def user_count():
     }
 
     return render_template('admin/user_count.html', context=context)
+
+@admin_blu.route('/user_list')
+def user_list():
+    """用户列表"""
+
+    # 1.接受参数
+    page = request.args.get('p', '1')
+
+    # 2.校验参数
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = '1'
+
+    # 3.分页查询用户列表。管理员除外
+    users = []
+    total_page = 1
+    current_page = 1
+    try:
+        paginate = User.query.filter(User.is_admin==False).paginate(page, constants.ADMIN_USER_PAGE_MAX_COUNT,False)
+        users = paginate.items
+        total_page = paginate.pages
+        current_page = paginate.page
+    except Exception as e:
+        current_app.logger.error(e)
+        abort(404)
+
+    user_dict_list = []
+    for user in users:
+        user_dict_list.append(user.to_admin_dict())
+
+    # 4.构造渲染数据
+    context = {
+        'users':user_dict_list,
+        'total_page':total_page,
+        'current_page':current_page
+    }
+
+    return render_template('admin/user_list.html',context=context)

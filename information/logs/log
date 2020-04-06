@@ -13133,3 +13133,100 @@ INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/adm
 INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
 INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:39] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:44] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:48] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+ERROR views.py:176 name 'constants' is not defined
+ERROR app.py:1891 Exception on /admin/user_list [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 187, in user_list
+    return render_template('admin/user_list.html', data=context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/admin/user_list.html", line 24, in top-level template code
+    {% for user in data.users %}
+TypeError: 'function' object is not iterable
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:56:49] "[35m[1mGET /admin/user_list HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:10] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:11] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+ERROR views.py:176 name 'constants' is not defined
+ERROR app.py:1891 Exception on /admin/user_list [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 187, in user_list
+    return render_template('admin/user_list.html', data=context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/admin/user_list.html", line 25, in top-level template code
+    {% for user in context.users %}
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'context' is undefined
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:58:12] "[35m[1mGET /admin/user_list HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:30] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:31] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:32] "[37mGET /admin/user_list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:32] "[37mGET /static/admin/css/jquery.pagination.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:59:32] "[37mGET /static/admin/js/jquery.pagination.min.js HTTP/1.1[0m" 200 -

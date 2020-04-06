@@ -12937,3 +12937,199 @@ INFO _internal.py:113 127.0.0.1 - - [01/Apr/2020 14:41:11] "[37mGET /admin/inde
 INFO _internal.py:113 127.0.0.1 - - [01/Apr/2020 14:41:11] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:17] "[37mGET /static/admin/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:17] "[37mGET /static/admin/images/person.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:31] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:33] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:33] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:40] "[37mGET /admin/ HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:40] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:40] "[37mGET /static/news/images/not_found.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:40] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:40] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:44] "[32mGET /admin/index HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:44] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:44] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:44] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:44] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:50] "[37mGET /admin/login HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:50] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:50] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:50] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:38:50] "[36mGET /static/admin/images/login-bg.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:01] "[36mGET /static/news/images/not_found.png HTTP/1.1[0m" 304 -
+ERROR views.py:88 module 'datetime' has no attribute 'strptime'
+ERROR views.py:97 module 'datetime' has no attribute 'strptime'
+ERROR app.py:1891 Exception on /admin/user_count [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 102, in user_count
+    now_date = datetime.strptime(datetime.now().strftime('%Y-%m-%d'), '%Y-%m-%d')
+AttributeError: module 'datetime' has no attribute 'strptime'
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:06] "[35m[1mGET /admin/user_count HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:08] "[37mGET /admin/user_list.html HTTP/1.1[0m" 200 -
+ERROR views.py:88 module 'datetime' has no attribute 'strptime'
+ERROR views.py:97 module 'datetime' has no attribute 'strptime'
+ERROR app.py:1891 Exception on /admin/user_count [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 102, in user_count
+    now_date = datetime.strptime(datetime.now().strftime('%Y-%m-%d'), '%Y-%m-%d')
+AttributeError: module 'datetime' has no attribute 'strptime'
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:12] "[35m[1mGET /admin/user_count HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:17] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:17] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+ERROR views.py:88 module 'datetime' has no attribute 'strptime'
+ERROR views.py:97 module 'datetime' has no attribute 'strptime'
+ERROR app.py:1891 Exception on /admin/user_count [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 102, in user_count
+    now_date = datetime.strptime(datetime.now().strftime('%Y-%m-%d'), '%Y-%m-%d')
+AttributeError: module 'datetime' has no attribute 'strptime'
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:39:26] "[35m[1mGET /admin/user_count HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:43] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+ERROR app.py:1891 Exception on /admin/user_count [GET]
+Traceback (most recent call last):
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lay/代码管理器/Information/information/info/modules/admin/views.py", line 148, in user_count
+    return render_template('admin/user_count.html', context=context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lay/代码管理器/Information/information/info/templates/admin/user_count.html", line 16, in top-level template code
+    <em>{{ data.total_count }}</em><span>人</span>
+  File "/home/lay/.virtualenvs/information/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'data' is undefined
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:43:45] "[35m[1mGET /admin/user_count HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:16] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:21] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:22] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:22] "[37mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:22] "[37mGET /admin/user_list.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:23] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:59] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:44:59] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[37mPOST /passport/logout HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:00] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:02] "[37mGET /passport/image_code?code_id=68598b74-e614-4b97-ba7e-b9d257b22478 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:02] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+DEBUG views.py:85 短信验证码的内容: 177232
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:14] "[37mPOST /passport/smscode HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[37mPOST /passport/register HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:33] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:34] "[37mGET /newslist?cid=1&page=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:34] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[37mGET /admin/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[37mGET /admin/user_count.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:37] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [06/Apr/2020 14:45:39] "[37mGET /admin/user_count HTTP/1.1[0m" 200 -

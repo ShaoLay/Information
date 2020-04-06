@@ -1,5 +1,6 @@
 import datetime
 import random
+import time
 
 from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify
 
@@ -66,3 +67,82 @@ def logout():
     session.pop('is_admin', None)
 
     return jsonify(errno=RET.OK, errmsg="OK！")
+
+@admin_blu.route('/user_count')
+def user_count():
+    """用户量统计"""
+
+    # 用户总数
+    total_count = 0
+    try:
+        total_count = User.query.filter(User.is_admin==False).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 月新增数
+    month_count = 0
+    # 计算每月开始时间 比如：2018-06-01 00：00：00
+    t = time.localtime()
+    # 计算每月开始时间字符串
+    month_begin = '%d-%02d-01' % (t.tm_year, t.tm_mon)
+    # 计算每月开始时间对象
+    month_begin_date = datetime.datetime.strptime(month_begin, '%Y-%m-%d')
+    try:
+        month_count = User.query.filter(User.is_admin==False,User.create_time>month_begin_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 日新增数
+    day_count = 0
+    # 计算当天的开始时间 比如：2018-06-04 00：00：00
+    t = time.localtime()
+    day_begin = '%d-%02d-%02d' % (t.tm_year, t.tm_mon, t.tm_mday)
+    day_begin_date = datetime.datetime.strptime(day_begin, '%Y-%m-%d')
+    try:
+        day_count = User.query.filter(User.is_admin==False,User.create_time>day_begin_date).count()
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 每日的用户登录活跃量
+    # 存放X轴的时间节点
+    active_date = []
+    # 存放Y轴的登录量的节点
+    active_count = []
+
+    # 查询今天开始的时间 06月04日 00:00:00
+    # 获取当天开始时时间字符串
+    today_begin = '%d-%02d-%02d' % (t.tm_year, t.tm_mon, t.tm_mday)
+    # 获取当前开始时时间对象
+    today_begin_date = datetime.datetime.strptime(today_begin, '%Y-%m-%d')
+
+    for i in range(0, 15):
+        # 计算一天开始
+        begin_date = today_begin_date - datetime.timedelta(days=i)
+        # 计算一天结束
+        end_date = today_begin_date - datetime.timedelta(days=(i - 1))
+
+        # 将X轴对应的开始时间记录
+        # strptime : 将时间字符串转成时间对象
+        # strftime : 将时间对象转成时间字符串
+        active_date.append(datetime.datetime.strftime(begin_date, '%Y-%m-%d'))
+
+        # 查询当天的用户登录量
+        try:
+            count = User.query.filter(User.is_admin == False, User.last_login >= begin_date,User.last_login<end_date).count()
+            active_count.append(count)
+        except Exception as e:
+            current_app.logger.error(e)
+
+    # 反转列表：保证时间线从左到右递增
+    active_date.reverse()
+    active_count.reverse()
+
+    context = {
+        'total_count':total_count,
+        'month_count':month_count,
+        'day_count':day_count,
+        'active_date':active_date,
+        'active_count':active_count
+    }
+
+    return render_template('admin/user_count.html', context=context)

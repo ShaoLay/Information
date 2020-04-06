@@ -1,10 +1,14 @@
+import datetime
+import random
+
 from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify
 
-from info import user_login_data
+from info import user_login_data, db
 from info.models import User
 from info.modules.admin import admin_blu
 from info.modules.passport import passport_blu
 from info.utils.response_code import RET
+# from manage import app
 
 
 @admin_blu.route('/login', methods=["GET", "POST"])

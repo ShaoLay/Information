@@ -38,36 +38,50 @@ $(function(){
         $error.hide();
     });
 
-    $confirm.click(function(){
-
-        var params = {}
-        if(sHandler=='edit')
+   $confirm.click(function(){
+    var params = {}
+    if(sHandler=='edit')
+    {
+        var sVal = $input.val();
+        if(sVal=='')
         {
-            var sVal = $input.val();
-            if(sVal=='')
-            {
-                $error.html('输入框不能为空').show();
-                return;
-            }
-            params = {
-                "id": sId,
-                "name": sVal,
-            };
+            $error.html('输入框不能为空').show();
+            return;
         }
-        else
+        params = {
+            "id": sId,
+            "name": sVal,
+        };
+    }
+    else
+    {
+        var sVal = $input.val();
+        if(sVal=='')
         {
-            var sVal = $input.val();
-            if(sVal=='')
-            {
-                $error.html('输入框不能为空').show();
-                return;
-            }
-            params = {
-                "name": sVal,
+            $error.html('输入框不能为空').show();
+            return;
+        }
+        params = {
+            "name": sVal,
+        }
+    }
+
+    $.ajax({
+        url:"/admin/add_category",
+        method: "post",
+        headers: {
+            "X-CSRFToken": getCookie("csrf_token")
+        },
+        data: JSON.stringify(params),
+        contentType: "application/json",
+        success: function (resp) {
+            if (resp.errno == "0") {
+                // 刷新当前界面
+                location.reload();
+            }else {
+                $error.html(resp.errmsg).show();
             }
         }
-
-        // TODO 发起修改分类请求
-
     })
+})
 })

@@ -443,3 +443,54 @@ def news_edit():
 
     # 5.响应结果
     return render_template('admin/news_edit.html',context=context)
+
+@admin_blu.route('/news_type')
+def get_news_category():
+    # 获取所有的分类数据
+    categories = Category.query.all()
+    # 定义列表保存分类数据
+    categories_dicts = []
+
+    for category in categories:
+        # 获取字典
+        cate_dict = category.to_dict()
+        # 拼接内容
+        categories_dicts.append(cate_dict)
+
+    categories_dicts.pop(0)
+    # 返回内容
+    return render_template('admin/news_type.html', data={"categories": categories_dicts})
+
+@admin_blu.route('/add_category', methods=["POST"])
+def add_category():
+    """修改或者添加分类"""
+
+    category_id = request.json.get("id")
+    category_name = request.json.get("name")
+    if not category_name:
+        return jsonify(errno=RET.PARAMERR, errmsg="参数错误")
+    # 判断是否有分类id
+    if category_id:
+        try:
+            category = Category.query.get(category_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询数据失败")
+
+        if not category:
+            return jsonify(errno=RET.NODATA, errmsg="未查询到分类信息")
+
+        category.name = category_name
+    else:
+        # 如果没有分类id，则是添加分类
+        category = Category()
+        category.name = category_name
+        db.session.add(category)
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存数据失败")
+    return jsonify(errno=RET.OK, errmsg="保存数据成功")

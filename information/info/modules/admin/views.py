@@ -5,12 +5,13 @@ import time
 from flask import request, render_template, current_app, session, g, redirect, url_for, jsonify, abort
 
 from info import user_login_data, db, constants
-from info.models import User, News
+from info.models import User, News, Category
 from info.modules.admin import admin_blu
 from info.modules.passport import passport_blu
 from info.utils import response_code
+from info.utils.image_storage import storage
 from info.utils.response_code import RET
-# from manage import app
+
 
 
 @admin_blu.route('/login', methods=["GET", "POST"])
@@ -304,3 +305,141 @@ def news_review_action():
         return jsonify(errno=response_code.RET.DBERR, errmsg='保存数据失败')
 
     return jsonify(errno=response_code.RET.OK, errmsg='OK')
+
+@admin_blu.route('/news_edit_detail/<int:news_id>', methods=['GET','POST'])
+def news_edit_detail(news_id):
+    """新闻板式编辑详情"""
+
+    if request.method == 'GET':
+        # 直接查询要编辑的新闻
+        news = None
+        try:
+            news = News.query.get(news_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            abort(404)
+        if not news:
+            abort(404)
+
+        # 直接查询分类
+        categories = []
+        try:
+            categories = Category.query.all()
+            categories.pop(0)
+        except Exception as e:
+            current_app.logger.error(e)
+            abort(404)
+
+        # 构造渲染数据
+        context = {
+            'news':news.to_dict(),
+            'categories':categories
+        }
+
+        return render_template('admin/news_edit_detail.html',context=context)
+
+    # 2.新闻板式详情编辑
+    if request.method == 'POST':
+        # 2.1 接受参数
+        # news_id = request.form.get("news_id")
+        title = request.form.get("title")
+        digest = request.form.get("digest")
+        content = request.form.get("content")
+        index_image = request.files.get("index_image")
+        category_id = request.form.get("category_id")
+
+        # 2.2 校验参数
+        if not all([news_id, title, digest, content, category_id]):
+            return jsonify(errno=response_code.RET.PARAMERR, errmsg='缺少参数')
+
+        # 2.3 查询要编辑的新闻
+        try:
+            news = News.query.get(news_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=response_code.RET.PARAMERR, errmsg='查询新闻数据失败')
+
+        if not news:
+            return jsonify(errno=response_code.RET.PARAMERR, errmsg='新闻不存在')
+
+        # 2.4 读取和上传图片
+        if index_image:
+            try:
+                index_image = index_image.read()
+            except Exception as e:
+                current_app.logger.error(e)
+                return jsonify(errno=response_code.RET.PARAMERR, errmsg='读取新闻数据失败')
+
+            # 2.5 将标题图片上传到七牛
+            try:
+                key = storage(index_image)
+            except Exception as e:
+                current_app.logger.error(e)
+                return jsonify(errno=response_code.RET.THIRDERR, errmsg='上传失败')
+
+            news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
+
+        # 2.6 保存数据并同步到数据库
+        news.title = title
+        news.digest = digest
+        news.content = content
+        news.category_id = category_id
+
+        try:
+            db.session.commit()
+        except Exception as e:
+            db.session.rollback()
+            current_app.logger.error(e)
+            return jsonify(errno=response_code.RET.DBERR, errmsg='保存数据失败')
+
+        # 2.7 响应结果
+        return jsonify(errno=response_code.RET.OK, errmsg='OK')
+
+
+@admin_blu.route('/news_edit')
+def news_edit():
+    """新闻板式编辑列表"""
+
+    # 1.接受参数
+    page = request.args.get('p','1')
+    keyword = request.args.get('keyword')
+
+    # 2.校验参数
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = '1'
+
+    # 3.分页查询
+    news_list = []
+    total_page = 1
+    current_page = 1
+    try:
+        if keyword:
+            paginate = News.query.filter(News.title.contains(keyword),News.status==0).order_by(News.create_time.desc()).paginate(page,constants.ADMIN_NEWS_PAGE_MAX_COUNT,False)
+        else:
+            paginate = News.query.filter(News.status == 0).order_by(News.create_time.desc()).paginate(page,
+                                                                                                      constants.ADMIN_NEWS_PAGE_MAX_COUNT,
+                                                                                                      False)
+
+        news_list = paginate.items
+        total_page = paginate.pages
+        current_page = paginate.page
+    except Exception as e:
+        current_app.logger.error(e)
+        abort(404)
+
+    # 4.构造渲染数据
+    news_dict_list = []
+    for news in news_list:
+        news_dict_list.append(news.to_review_dict())
+
+    context = {
+        'news_list':news_dict_list,
+        'total_page':total_page,
+        'current_page':current_page
+    }
+
+    # 5.响应结果
+    return render_template('admin/news_edit.html',context=context)
